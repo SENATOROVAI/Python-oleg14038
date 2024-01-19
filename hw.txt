@@ -1,0 +1,69 @@
+﻿03/15/23
+
+1)Sign up
+https://codeforces.com/problemset/problem/4/A?locale=ru
+https://projecteuler.net/problem=1, 
+https://leetcode.com/ просто зарегаться
+2) Прочитать
+https://peps.python.org/pep-0008/
+3) скачать
+https://t.me/RuslanSenatorov/429 и https://t.me/RuslanSenatorov/43
+
+решение сюда \algorithms\homework1.ipynb
+
+
+10\22
+
+Python (Пройти первый пункт):
+
+1) https://t.me/SenatorovBootcamp/1/5243 
+
+Алгоритмы(Выполнить):
+1) 1 задача в день https://leetcode.com/tag/math/ 
+
+
+Алгоритмы (Зарегаться):
+
+1)https://codeforces.com/
+
+2)https://projecteuler.net/archives
+
+Data Science (зарегаться):
+1) https://www.kaggle.com/
+
+git:
+1)подписаться на коллег https://github.com/orgs/SENATOROVAI/people   
+            
+2)оформить гитхаб https://www.youtube.com/watch?v=pm17VwdJ6UI
+   
+2)выбор шаблона https://github.com/abhisheknaiidu/awesome-github-profile-readme
+
+3)https://t.me/SenatorovBootcamp/3602/5714
+
+
+Алгоритмы:
+1)скачать
+https://t.me/ruslansenatorov/429
+                                                                        
+дискретка (математика для прогеров):
+1)https://t.me/ruslansenatorov/43
+
+system design:
+скачать 
+https://library.samdu.uz/download/20642
+
+Math:
+1) https://t.me/SenatorovBootcamp/888/4762 Пройти весь марафон.
+
+
+===============================
+План на день:
+1) инди курс 1ч https://stepik.org/course/63085/promo
+2) компьютер сайнс пройти курс https://learn.epam.com/detailsPage?id=07464fe7-306f-4aa2-abdb-fb81ba509124 1ч 
+3) посмотреть видео https://www.youtube.com/watch?v=Wh22_O8jXVQ&list=PLIJLLSrXDPojDGKW0WZ7sU0eO3nyn0oDc 1ч 
+4) 1 задача на литкод ежедневно, сб/вс - отдых (250 задач в год)
+5) скачать https://t.me/SenatorovBootcamp/766/8001 и выписать в тетрадь 54-63 страницы, проникнуться идеей что код работает за разное время и нужно уметь оценивать это время. вести конспект до 102 стр
+
+
+
+
