@@ -65,5 +65,11 @@ Math:
 5) скачать https://t.me/SenatorovBootcamp/766/8001 и выписать в тетрадь 54-63 страницы, проникнуться идеей что код работает за разное время и нужно уметь оценивать это время. вести конспект до 102 стр
 
 
-
+Аналитика данных на pandas:
+1) https://stepik.org/course/74457/syllabus
+2) https://stepik.org/course/3356/syllabus начать с секции (6. Неделя 2 - Векторы, Матрицы)
+3) https://www.kaggle.com/learn/pandas
+4) https://www.freecodecamp.org/learn/data-analysis-with-python/
+5) https://stepik.org/course/4852/syllabus (только введение)
+ПРАКТИКА В PANDAS: https://leetcode.com/problemset/pandas/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D
 
