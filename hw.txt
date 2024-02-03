@@ -73,3 +73,9 @@ Math:
 5) https://stepik.org/course/4852/syllabus (только введение)
 ПРАКТИКА В PANDAS: https://leetcode.com/problemset/pandas/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D
 
+Pandas:
+1) 1 задача в день 
+https://leetcode.com/studyplan/introduction-to-pandas/ 
+2) когда закончишь начни 
+https://leetcode.com/studyplan/30-days-of-pandas/
+==================================
