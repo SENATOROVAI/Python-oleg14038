@@ -72,6 +72,8 @@ Math:
 4) https://www.freecodecamp.org/learn/data-analysis-with-python/
 5) https://stepik.org/course/4852/syllabus (только введение)
 ПРАКТИКА В PANDAS: https://leetcode.com/problemset/pandas/?sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D
+6) https://www.w3schools.com/python/pandas/pandas_cleaning_wrong_data.asp
+6.1) https://www.datacamp.com/tutorial/data-preparation-with-pandas
 
 Pandas:
 1) 1 задача в день 
