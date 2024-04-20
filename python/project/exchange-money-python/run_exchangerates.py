@@ -1,19 +1,23 @@
-# import requests as re
-import ДЖЕКСОН))
+import sys; sys.path.append("/path/to/root")
+from requests import re
+import os
+import json
+
 
 
 API_KEY = "bce823840b2ba077be0b77fe90e64a22"
 url = "https://api.exchangeratesapi.io/v1/"
 
+
 BASE_CURRENCY = "EUR"  # only for free tariff
-# OUTPUT_CURRENCY_LIST = "USD", "EUR"
+OUTPUT_CURRENCY_LIST = "USD", "EUR"
 AMOUNT = 1
 
 def exchange(cur, amount):
-    with open("ФАЙЛ.JSON ИЩИ В ПРОЕКТЕ", "r") as f:
-        req_json = ДЖЭСОН.МЕТОД ЗАГРУЗКИ(f.прочитать)
-        result = float(req_json ПО КЛЮЧУ получить -> cur <- который вложен в rates)
-    return f"{amount} EUR = "+str(result) + f" {cur}"
+    with open('exchangerates_req.json',  "r") as f:
+        req_json = json.loads(f.readlines())
+        result = float(req_json['rates']['cur'])
+    return f"{amount} EUR = {result} {cur}"
 
 def currency(currency):
     """
@@ -24,9 +28,9 @@ def currency(currency):
     def among(amount):
         nonlocal currency
         cur = currency
-        with open("ФАЙЛ.JSON ИЩИ В ПРОЕКТЕ", "r") as f:
-            req_json = ДЖЭСОН.МЕТОД ЗАГРУЗКИ(f.прочитать)
-        return float(req_json ПО КЛЮЧУ получить -> cur <- который вложен в rates)
+        with open('exchangerates_req.json', "r") as f:
+            req_json = json.loads(f.readlines())
+        return float(req_json['rates']['cur'])
     return among
 
 

@@ -1,6 +1,6 @@
 import requests as re
 import json
-# import os
+import os
 
 
 API_KEY = "3b657357d9c210c7bcee8ce37875e685"
