@@ -14,7 +14,7 @@ OUTPUT_CURRENCY_LIST = "USD", "EUR"
 AMOUNT = 1
 
 def exchange(cur, amount):
-    with open('exchangerates_req.json',  "r") as f:
+    with open('exchangerates_req.json') as f:
         req_json = json.loads(f.readlines())
         result = float(req_json['rates']['cur'])
     return f"{amount} EUR = {result} {cur}"
@@ -28,7 +28,7 @@ def currency(currency):
     def among(amount):
         nonlocal currency
         cur = currency
-        with open('exchangerates_req.json', "r") as f:
+        with open('exchangerates_req.json') as f:
             req_json = json.loads(f.readlines())
         return float(req_json['rates']['cur'])
     return among
