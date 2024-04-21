@@ -8,8 +8,8 @@ PAIR_CURRENCY = "USDRUB"
 AMOUNT = "5"
 
 # 1000 requests in a day
-# req_ = re.get(f'https://currate.ru/api/?get=currency_list&key={API_KEY}')
-# get =  https://currate.ru/api/?get=rates&pairs=USDRUB,EURRUB&key=YOUR-API-KEY
+req_ = req.get(f'https://currate.ru/api/?get=currency_list&key={API_KEY}')
+get =  "https://currate.ru/api/?get=rates&pairs=USDRUB,EURRUB&key=YOUR-API-KEY"
 
 
 def get_pair_amount():
@@ -122,21 +122,21 @@ def get_pair_course():
         "ZECUSD"
 """
 
-# def refresh_data():
-#     # заменить на запрос
-#     with open('req_cur.json', 'w') as outfile:
-#         json.dump(json.loads(get_course.text), outfile, ensure_ascii=False, indent=4)
+def refresh_data():
+    req_ = req.get(f'https://currate.ru/api/?get=currency_list&key={API_KEY}')
+    with open('req_cur.json', 'w') as outfile:
+    json.dump(json.loads(get_course.text), outfile, ensure_ascii=False, indent=4)
 
 
-# with open("req.json", "r") as file:
-#     req_json = json.loads(file.read())
-# staus_code = req_json["status"]
+with open("req.json", "r") as file:
+    req_json = json.loads(file.read())
+    staus_code = req_json["status"]
 
 
-# if os.path.exists('req_cur.json')==0:
-#     with open('req_cur.json', 'w') as outfile:
-#         json.dump(json.loads(get.text), outfile, ensure_ascii=False, indent=4)
+if os.path.exists('req_cur.json')==0:
+    with open('req_cur.json', 'w') as outfile:
+        json.dump(json.loads(get.text), outfile, ensure_ascii=False, indent=4)
 
-# with open("req_cur.json", "r") as file:
-#     req_json = json.loads(file.read())
-# print(req_json["data"])
+with open("req_cur.json", "r") as file:
+    req_json = json.loads(file.read())
+print(req_json["data"])
