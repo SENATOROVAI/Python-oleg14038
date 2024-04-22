@@ -123,9 +123,9 @@ def get_pair_course():
 """
 
 def refresh_data():
-    req_ = req.get(f'https://currate.ru/api/?get=currency_list&key={API_KEY}')
+    req_ = re.get(f'https://currate.ru/api/?get=currency_list&key={API_KEY}')
     with open('req_cur.json', 'w') as outfile:
-    json.dump(json.loads(get_course.text), outfile, ensure_ascii=False, indent=4)
+        json.dump(json.loads(get_course.text), outfile, ensure_ascii=False, indent=4)
 
 
 with open("req.json", "r") as file:
