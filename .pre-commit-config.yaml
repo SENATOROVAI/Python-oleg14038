@@ -26,6 +26,7 @@ repos:
         require_serial: true
         types_or: [jupyter, markdown]
         additional_dependencies: [mypy]
+        args: ["--ignore-missing-imports"]
       - id: nbqa-pylint
         name: nbqa-pylint
         description: Run 'pylint' on a Jupyter Notebook
@@ -117,7 +118,9 @@ repos:
     rev: v1.9.0
     hooks:
       - id: mypy
-  - repo: local
+        args: ["--ignore-missing-imports"]
+  - repo: https://github.com/pylint-dev/pylint
+    rev: v3.1.0
     hooks:
       - id: pylint
         name: pylint
@@ -126,7 +129,3 @@ repos:
         types: [python]
         args: ["--max-line-length=79"]
 
-  # - repo: https://github.com/astral-sh/ruff-pre-commit
-  #   rev: v0.4.1
-  #   hooks:
-  #     - id: ruff     
