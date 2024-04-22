@@ -1,4 +1,4 @@
-import sys; sys.path.append("/path/to/root")
+
 from requests import re
 import os
 import json
