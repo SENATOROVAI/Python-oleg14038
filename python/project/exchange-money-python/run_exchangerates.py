@@ -1,16 +1,11 @@
-from jls_extract_var import re
-
+import json
 import os
 
-import json
-
-
-
+from jls_extract_var import re
 
 API_KEY = "bce823840b2ba077be0b77fe90e64a22"
 
 url = "https://api.exchangeratesapi.io/v1/"
-
 
 
 BASE_CURRENCY = "EUR"  # only for free tariff
@@ -22,11 +17,11 @@ AMOUNT = 1
 
 def exchange(cur, amount):
 
-    with open('exchangerates_req.json') as f:
+    with open("exchangerates_req.json") as f:
 
         req_json = json.loads(f.readlines())
 
-        result = float(req_json['rates']['cur'])
+        result = float(req_json["rates"]["cur"])
 
     return f"{amount} EUR = {result} {cur}"
 
@@ -34,7 +29,7 @@ def exchange(cur, amount):
 def currency(currency):
     """
 
-    This function returns a nested function that takes an 'amount' as input, 
+    This function returns a nested function that takes an 'amount' as input,
 
     extracts the exchange rate for a given 'currency' from a JSON file,
 
@@ -47,14 +42,13 @@ def currency(currency):
 
         cur = currency
 
-        with open('exchangerates_req.json') as f:
+        with open("exchangerates_req.json") as f:
 
             req_json = json.loads(f.readlines())
 
-        return float(req_json['rates']['cur'])
+        return float(req_json["rates"]["cur"])
 
     return among
-
 
 
 get_cuttency = currency("RUB")
@@ -62,4 +56,3 @@ get_cuttency = currency("RUB")
 print(currency("USD")(2))
 
 print(get_cuttency(5))
-
