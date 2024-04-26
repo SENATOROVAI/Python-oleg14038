@@ -41,7 +41,10 @@ repos:
         require_serial: true
         types_or: [jupyter, markdown]
         additional_dependencies: [pylint]
-        args: ["--max-line-length=79", "--disable=import-error"]
+        args: [
+          --max-line-length=79,
+          --disable=E0401,
+        ]
       - id: nbqa-pyupgrade
         name: nbqa-pyupgrade
         description: Run 'pyupgrade' on a Jupyter Notebook
