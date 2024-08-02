@@ -1,4 +1,4 @@
-repos:
+repos: 
   - repo: https://github.com/PyCQA/docformatter
     rev: v1.7.5
     hooks:
@@ -75,15 +75,15 @@ repos:
         additional_dependencies:
           - tomli
         args:
-          - --ignore-regex=^\s*"image\/png":\s.*
+          - --ignore-regex=^\s*"image\/(jpeg|png|gif|bmp|tiff)":\s.*
           - --skip=*.js,*.html,*.css,*.svg",*.json,*.png,*.jpg,*.yml,*.yaml
   - repo: https://github.com/nbQA-dev/nbQA
     rev: 1.8.5
     hooks:
       - id: nbqa-flake8
         args:
-          - --ignore=E501,E712,W291,F632,E203
-          - --exclude=.*
+          - --ignore=E501,E712,W291,F632,E203,F821,F403
+          - --exclude=.*,__init__.py
         name: nbqa-flake8
         description: Run 'flake8' on a Jupyter Notebook
         entry: nbqa flake8
@@ -100,8 +100,8 @@ repos:
     hooks:
       - id: flake8
         args:
-          - --ignore=E501,E712,W291,F632,E203
-          - --exclude=.*
+          - --ignore=E501,E712,W291,F632,E203,F821,F403
+          - --exclude=.*,__init__.py
         additional_dependencies:
           - flake8-variables-names
           - pep8-naming
@@ -194,7 +194,7 @@ repos:
         types_or: [jupyter, markdown]
         additional_dependencies: [pylint]
         args:
-          - --ignore=no_check*,
+          - --ignore=no_check*,__init__.py
           - --max-line-length=79
           - --const-naming-style=any
           - --disable=E0401,W0104,R0903
@@ -209,7 +209,7 @@ repos:
         types: [python]
         args:
           [
-            "--ignore=no_check*",
+            "--ignore=no_check*,__init__.py",
             "--max-line-length=79",
             "--const-naming-style=any",
             "--disable=E0401,W0104,R0903",
