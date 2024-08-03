@@ -1,85 +1,121 @@
-# Оперделить ли введенное число явяляеться простыми
-# Простое число которое делиться на себя или на 1
+"""
+Module with functions for performing basic algorithmic tasks and operations:
+- Checking a prime number
+- The sum of the digits of the number
+- Squares of the numbers in the list
+- Removing duplicate characters and spaces from a string
+- Counting words per line
+- Lucky Number Calculator
+"""
 
 
-a = int(input('Введите число: '))
+def is_prime_number():
+    """Определить, является ли введенное число простым.
 
-k = 0  # Записываем Количество делителей
+    Простое число делится только на себя и на 1.
+    """
+    number = int(input("Введите число: "))
 
-delit = []
+    divisor_count = 0  # Количество делителей
+    divisors = []
 
-for i in range(1, a + 1):  # Перебераем число от 1 до a + 1 то есть само число включительно
-    if a % i == 0:
-        k += 1
-        delit.append(i)
-if k == 2:  # Если k == 2 то есть у простого числа 2 делителя
-    print('Число простое ')
-else:
-    print('Число непростое ')
-    print(delit)  # Выводит все делители чиса
-
-
-# Найти сумму цифр введенного числа
-
-b = int(input('Вв число: '))
-summa = 0
-
-while b > 0:  # Пока число (a) больше 0
-    summa += b % 10  # Мы в нашу переменную summa прибавляем последние цифры числа в десятичной системи исчесления
-    b = b // 10  # отрезаем последнию цифру числа в десятичной системой исчесления
-print(summa)
+    for num in range(1, number + 1):  # Перебираем числа от
+        # до number включительно
+        if number % num == 0:
+            divisor_count += 1
+            divisors.append(num)
+    if divisor_count == 2:  # Если количество делителей равно 2, число простое
+        print("Число простое")
+    else:
+        print("Число непростое")
+        print(divisors)  # Выводим все делители числа
 
 
-# Дан список чисел превратить его в список квадратах этих чисел
+def sum_of_digits():
+    """Найти сумму цифр введенного числа."""
+    num = int(input("Введите число: "))
+    sum_digits = 0
 
-List1 = [4, 5, 6, 7]
-list2 = []
-
-for i in List1:
-    list2.append(i**2)
-print(list2)
-
-List3 = [4, 5,  6]
-
-list4 = [x**2 for x in List3]  # Генератор списков
-print(list4)
+    while num > 0:  # Пока число больше 0
+        sum_digits += num % 10  # Добавляем последнюю цифру числа к сумме
+        num //= 10  # Удаляем последнюю цифру числа
+    print(sum_digits)
 
 
-# Вводиться строка, требуеться удалить из нее повторяющийся символы и все пробелы
-stroka = input('Введите строку ')
-stroka_newe = ''
+def square_numbers():
+    """Преобразовать список чисел в список квадратов этих чисел."""
+    numbers = [4, 5, 6, 7]
+    squared_numbers = []
 
-for x in stroka:
-    # Если сивола нет в новой  строке (stroka_newe) и этот символ не равен  пробелу
-    if x not in stroka_newe and x != '':
-        stroka_newe += x
-print(stroka_newe)
+    for number in numbers:
+        squared_numbers.append(number**2)
+    print(squared_numbers)
+
+    # Используем генератор списков
+    numbers_2 = [4, 5, 6]
+    squared_numbers_2 = [x**2 for x in numbers_2]
+    print(squared_numbers_2)
 
 
-# Вводится строка состаящий из слов разделенными  пробелами, требуется посчитать количествро слов в ней
-s = input('Введите строку: ')
-k = 0
-for z in s:
-    if z == ' ':
-        k += 1
-print(k+1)
+def remove_duplicates_and_spaces():
+    """Удалить из строки повторяющиеся символы и все пробелы."""
+    input_string = input("Введите строку: ")
+    unique_chars = ""
 
-s2 = input('Введите str: ')
-print(len(s2.split()))  # метод split преобоазует разбиваеь строку на список
+    for char in input_string:
+        # Если символа нет в новой строке и он не является пробелом
+        if char not in unique_chars and char != " ":
+            unique_chars += char
+    print(unique_chars)
 
-# Создайте канкулятор счастливых чисел
 
-data = input('Введите дату рождения в формате ДД.ММ.ГГ ')
+def count_words():
+    """Подсчитать количество слов в строке, разделенных пробелами."""
+    input_sentence = input("Введите строку: ")
+    word_count = 0
+    for char in input_sentence:
+        if char == " ":
+            word_count += 1
+    print(word_count + 1)
 
-data2 = data.split('.')
+    # Альтернативный метод с использованием split
+    input_sentence_2 = input("Введите строку: ")
+    print(len(input_sentence_2.split()))  #
 
-day = data2[0]
-month = data2[1]
-year = data2[2]
-sum = 0
-while day > 0
-sum += day % 10
-day // = 10
-while day > 0
-sum += day % 10
-day // = 10
+
+def lucky_number_calculator():
+    """Создать калькулятор счастливых чисел."""
+    birth_date = input("Введите дату рождения в формате ДД.ММ.ГГ: ")
+
+    # Разделяем дату на день, месяц и год
+    birth_date_parts = birth_date.split(".")
+    day = int(birth_date_parts[0])
+    month = int(birth_date_parts[1])
+    year = int(birth_date_parts[2])
+    sum_birth_date_digits = 0
+
+    # Считаем сумму цифр дня
+    while day > 0:
+        sum_birth_date_digits += day % 10
+        day //= 10
+
+    # Считаем сумму цифр месяца
+    while month > 0:
+        sum_birth_date_digits += month % 10
+        month //= 10
+
+    # Считаем сумму цифр года
+    while year > 0:
+        sum_birth_date_digits += year % 10
+        year //= 10
+
+    print("Сумма цифр вашей даты рождения:", sum_birth_date_digits)
+
+
+# Вызов функций для демонстрации
+is_prime_number()
+sum_of_digits()
+square_numbers()
+remove_duplicates_and_spaces()
+count_words()
+lucky_number_calculator()
