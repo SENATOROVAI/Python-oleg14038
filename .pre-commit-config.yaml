@@ -1,4 +1,4 @@
-repos:
+repos: 
   - repo: https://github.com/PyCQA/docformatter
     rev: v1.7.5
     hooks:
@@ -127,6 +127,9 @@ repos:
           - types-setuptools
 
         args:
+          # - --cache-dir=/dev/null
+          # - --cache-dir=nul
+          # - --no-incremental
           - --non-interactive
           - --install-types
           - --explicit-package-bases
@@ -145,6 +148,7 @@ repos:
           - --warn-unreachable
           - --warn-redundant-casts
           - --warn-return-any
+          - --disallow-any-explicit
 
 
 
@@ -153,6 +157,9 @@ repos:
     hooks:
       - id: mypy
         args:
+          # - --cache-dir=/dev/null
+          # - --cache-dir=nul
+          # - --no-incremental
           - --non-interactive
           - --install-types
           - --explicit-package-bases
@@ -171,6 +178,7 @@ repos:
           - --warn-unreachable
           - --warn-redundant-casts
           - --warn-return-any
+          - --disallow-any-explicit
 
 
         additional_dependencies:
