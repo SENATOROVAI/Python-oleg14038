@@ -74,3 +74,4 @@ target/
 *.env  # Environment variable files
 coverage/
 scripts/.build_directory_md.py
+scripts/build_directory_md.py.py
