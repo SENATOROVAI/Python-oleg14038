@@ -1,6 +1,5 @@
 
 ## Python Algoritms
-  * [.Eneter Password](Python_algoritms/.eneter_password.ipynb)
   * [.Enter Password](Python_algoritms/.enter_password.ipynb)
   * [.Guess The Number](Python_algoritms/.guess_the_number.ipynb)
   * [.Instructions Functions](Python_algoritms/.instructions_functions.ipynb)
