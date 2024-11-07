@@ -5,8 +5,11 @@
   * [.Instructions Functions](Python_algoritms/.instructions_functions.ipynb)
   * [.Palindrom](Python_algoritms/.palindrom.ipynb)
   * [Codeforces](Python_algoritms/codeforces.ipynb)
+  * [Codeforces](Python_algoritms/codeforces.py)
   * [Password](Python_algoritms/password.ipynb)
+  * [Password](Python_algoritms/password.py)
   * [Simple Algorithms](Python_algoritms/simple_algorithms.ipynb)
+  * [Simple Algorithms](Python_algoritms/simple_algorithms.py)
 
 ## [Log](/log.ipynb)
 
@@ -20,6 +23,7 @@
   * Parsing
     * [Parsing](python/Parsing/parsing.ipynb)
   * [Example Code](python/example_code.ipynb)
+  * [Example Code](python/example_code.py)
   * Lesson
     * [.Lesson11Pull](python/lesson/.lesson11pull.ipynb)
     * [.Lesson6](python/lesson/.lesson6.ipynb)
@@ -39,3 +43,4 @@
     * [Chapter5](python/made-easy/chapter5.ipynb)
     * [Chapter6](python/made-easy/chapter6.ipynb)
   * [Stepik](python/stepik.ipynb)
+  * [Stepik](python/stepik.py)
