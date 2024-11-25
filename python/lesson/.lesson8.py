@@ -11,6 +11,7 @@
 #     language: python
 #     name: python3
 # ---
+
 """Модуль содержит объяснения понятий рефакторинга и code review."""
 
 #
