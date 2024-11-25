@@ -12,27 +12,25 @@
 #     name: python3
 # ---
 
-
 # +
 """Модуль, содержащий типовые аннотации для функций и классов."""
-from typing import Union
+
+from typing import List, Union
 
 # +
-list_name1: list[int] = []
-list_name: list[int] = []  # синтаксический сахар
+list_name1: List[int] = []
+list_name: List[int] = []  # синтаксический сахар
 
 _ = type(list_name), type(list_name1)  # list => name of class
 
 
 # +
-
-
 class ListOne:
     """Класс ListOne демонстрирует работу с атрибутами класса и методами."""
 
-    list_number: list[int] = [1, 2, 3]
+    list_number: List[int] = [1, 2, 3]
 
-    def get_value(self, string: str) -> list[Union[int, str]]:
+    def get_value(self, string: str) -> List[Union[int, str]]:
         """Возвращает список с числами, строкой и числом 5."""
         return [*self.list_number, string, 5]
 
@@ -54,12 +52,12 @@ for item in range(0, 10):
 
 dir(list)
 try:
-    number_one = 1
-    number_one.__add__(1)
-except Exception:
-    list1
+number = 1
+number.__add__(1)
+except: 
+list1
 # -
 
-# help(ListOne())
+help(ListOne())
 
-# Vhelp(ListOne)
+help(ListOne)

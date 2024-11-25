@@ -40,16 +40,19 @@ print(max_value)  # Максимальный элемент
 operation_list = ["+", "-", "/", "*"]
 
 
-def calculate(num_1: float, math_: str, num_2: float) -> int | float:
-    """Выполняет математическую операцию между двумя числами.
+def calculate(num_1: float, math_: str, num_2: float) -> bool:
+    """
+    Выполняет математическую операцию с.
+    
+    двумя числами и выводит результат на консоль.
 
-    Parameters:
+    Параметры.
     num_1 (float): Первое число.
     math_ (str): Математическая операция (+, -, /, *).
     num_2 (float): Второе число.
 
-    Returns:
-    int | float: Результат выполнения операции.
+    Возвращает:
+    float: Результат вычислений. Если произошла ошибка, возвращает 0.0.
     """
     try:
         if math_ == "/" and num_2 == 0:
@@ -69,32 +72,28 @@ def calculate(num_1: float, math_: str, num_2: float) -> int | float:
             print("Unknown operation")
             return 0.0
 
-        print(f"{num_1} {math_} {num_2} = {result}")
+        print(f"
+{num_1} {math_} {num_2} = {result}
+")
         return result
+
     except ValueError:
         print("Error: Invalid input data")
         return 0.0
+    except ValueError:
 
+def check_input_data(n1: str, opr: str, n2: str) -> bool:
+    """
+    Проверяет корректность входных данных.
 
-def is_input_data_valid(number_one: str, opr: str, number_two: str) -> bool:
-    """Проверяет корректность входных данных.
-
-    Parameters:
-    number_one (str): Первое число в строковом формате.
+    Параметры:
+    n1 (str): Первое число в строковом формате.
     opr (str): Математическая операция (+, -, /, *).
-    number_two (str): Второе число в строковом формате.
+    n2 (str): Второе число в строковом формате.
 
-    Returns:
+    Возвращает:
     bool: True если данные корректны, иначе False.
     """
     if opr not in operation_list:
         print("Error: Invalid operation")
-        return False
-
-    try:
-        float(number_one)
-        float(number_two)
-        return True
-    except ValueError:
-        print("Error: Invalid number format")
-        return False
+        return
