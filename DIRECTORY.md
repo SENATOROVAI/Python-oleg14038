@@ -1,5 +1,5 @@
 
-## Python Algoritms
+## Python Algorithms
   * [.Enter Password](Python_algoritms/.enter_password.ipynb)
   * [.Enter Password](Python_algoritms/.enter_password.py)
   * [.Guess The Number](Python_algoritms/.guess_the_number.ipynb)

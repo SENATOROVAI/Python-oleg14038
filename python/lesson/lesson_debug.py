@@ -11,9 +11,7 @@
 #     language: python
 #     name: python3
 # ---
-
-"""
-This module provides basic arithmetic operations.
+"""This module provides basic arithmetic operations.
 
 Functions.
 - add_numbers(num1, num2): Returns the sum of two numbers.
@@ -23,8 +21,7 @@ Functions.
 def greet(name1: str) -> None:
     """Print a greeting to the user.
 
-    Args.
-        name (str): The name of the person to greet.
+    Args.     name (str): The name of the person to greet.
     """
     print("Hello, " + name1)
 

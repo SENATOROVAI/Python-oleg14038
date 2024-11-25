@@ -13,8 +13,7 @@
 # ---
 
 # +
-"""
-Этот модуль загружает данные из CSV-файла.
+"""Этот модуль загружает данные из CSV-файла.
 
 и обрабатывает их с помощью библиотеки pandas.
 """
@@ -58,7 +57,7 @@ df_ful = df_full_name.rename(
         "Заработано": "maney",
         "Город": "city",
         "Платежная система": "payment_system",
-    }
+    },
 )
 
 df_ren = df_full_name.rename(columns={"maney": "money"})
@@ -131,7 +130,7 @@ df_col = df_full.rename(
         "Заработано": "money",
         "Город": "city",
         "Платежная система": "payment_system",
-    }
+    },
 )
 
 money_sum = (

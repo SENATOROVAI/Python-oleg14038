@@ -11,12 +11,11 @@
 #     language: python
 #     name: python3
 # ---
-
 """Steps: fork, clone, modify, commit, push, pull request."""
 
-# 1)Делаем fork 
+# 1)Делаем fork
 #
-# 2)склонировать на PC    
+# 2)склонировать на PC
 #
 # 3)Внесение измениение(for example:(Например) mypy , blackfork )
 #
@@ -24,4 +23,4 @@
 #
 # 5)git push
 #
-# 6)pull requests     
+# 6)pull requests
