@@ -13,10 +13,12 @@
 # ---
 
 # +
-"""This module is designed for web scraping and data extraction tasks.
+"""
+This module is designed for web scraping and data extraction tasks.
 
-It uses the requests library to fetch web pages. BeautifulSoup to parse. and
-extract meaningful data from HTML content.
+It uses the requests library to fetch web pages.
+BeautifulSoup to parse.
+and extract meaningful data from HTML content.
 """
 
 import requests
@@ -49,9 +51,9 @@ from bs4 import BeautifulSoup
 #     main()
 # -
 
-
 def get_html(url_one: str) -> tuple[str, int]:
-    """Получает HTML-код страницы по заданному URL.
+    """
+    Получает HTML-код страницы по заданному URL.
 
     Возвращает текст ответа и код статуса.
 
@@ -68,7 +70,8 @@ def get_html(url_one: str) -> tuple[str, int]:
 
 
 def get_data(html: str) -> str:
-    """Извлекает текст заголовка из HTML-кода страницы.
+    """
+    Извлекает текст заголовка из HTML-кода страницы.
 
     с использованием BeautifulSoup.
 
@@ -85,13 +88,14 @@ def get_data(html: str) -> str:
     элементы не найдены, функция может вызвать AttributeError.
     """
     soup = BeautifulSoup(html, "lxml")
-    header_one = soup.find("div", id="home-welcome").find("header").find("h1").text
-    return str(header_one)
+    h1 = soup.find("div", id="home-welcome").find("header").find("h1").text
+    return str(h1)
 
 
 # +
 def main() -> None:
-    """Основная функция программы. Выполняет следующие действия.
+    """
+    Основная функция программы. Выполняет следующие действия.
 
     1. Устанавливает URL-адрес веб-страницы.
     2. Получает HTML-код страницы по заданному URL
