@@ -65,6 +65,7 @@
     * [Chapter3](python/made-easy/chapter3.ipynb)
     * [Chapter3](python/made-easy/chapter3.py)
     * [Chapter4](python/made-easy/chapter4.ipynb)
+    * [Chapter4](python/made-easy/chapter4.py)
     * [Chapter5](python/made-easy/chapter5.ipynb)
     * [Chapter5](python/made-easy/chapter5.py)
     * [Chapter6](python/made-easy/chapter6.ipynb)
