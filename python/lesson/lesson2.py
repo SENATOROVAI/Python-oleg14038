@@ -15,15 +15,15 @@
 # +
 """Модуль для поиска наибольшего значения в списке чисел."""
 
-numbers = [1, 2, 3]  # список - Структура данных
+number_max = [1, 2, 3]  # список - Структура данных
 
 # алгоритм поиска наибольшего значения
 # Алгоритм = последовательность действий, для выполнения задачи
 
-max_value = numbers[0]  # Создали новую переменную max_value
+max_value = number_max[0]  # Создали новую переменную max_value
 # и присвоили ей значение элемента с индексом ноль
 
-for number in numbers:  # in оператор членства
+for number in number_max:  # in оператор членства
     max_value = max(max_value, number)  # Используем встроенную
     # функцию max для обновления max_value
 
@@ -40,10 +40,9 @@ print(max_value)  # Максимальный элемент
 operation_list = ["+", "-", "/", "*"]
 
 
-def calculate(num_1: float, math_: str, num_2: float) -> bool:
-    """
-    Выполняет математическую операцию с.
-    
+def calculate(num_1: float, math_: str, num_2: float) -> int | float:
+    """Выполняет математическую операцию с.
+
     двумя числами и выводит результат на консоль.
 
     Параметры.
@@ -72,28 +71,33 @@ def calculate(num_1: float, math_: str, num_2: float) -> bool:
             print("Unknown operation")
             return 0.0
 
-        print(f"
-{num_1} {math_} {num_2} = {result}
-")
+        print(f"{num_1} {math_} {num_2} = {result}")
         return result
 
     except ValueError:
         print("Error: Invalid input data")
         return 0.0
-    except ValueError:
 
-def check_input_data(n1: str, opr: str, n2: str) -> bool:
-    """
-    Проверяет корректность входных данных.
+
+def is_input_valid(number_one: str, opr: str, number_two: str) -> bool:
+    """Проверяет корректность входных данных.
 
     Параметры:
-    n1 (str): Первое число в строковом формате.
+    number_one (str): Первое число в строковом формате.
     opr (str): Математическая операция (+, -, /, *).
-    n2 (str): Второе число в строковом формате.
+    number_two (str): Второе число в строковом формате.
 
     Возвращает:
     bool: True если данные корректны, иначе False.
     """
     if opr not in operation_list:
         print("Error: Invalid operation")
-        return
+        return False
+
+    try:
+        float(number_one)
+        float(number_two)
+        return True
+    except ValueError:
+        print("Error: Invalid number format")
+        return False

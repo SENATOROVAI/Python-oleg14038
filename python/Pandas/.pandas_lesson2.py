@@ -13,8 +13,7 @@
 # ---
 
 # +
-"""
-This module provides functionality for working with data using pandas.
+"""This module provides functionality for working with data using pandas.
 
 It includes functions and utilities to manipulate and analyze data frames.
 """
@@ -27,7 +26,9 @@ import pandas as pd
 
 # +
 obj = pd.Series(
-    [1, 2, 3], index=["a", "b", "c"], dtype="int8"
+    [1, 2, 3],
+    index=["a", "b", "c"],
+    dtype="int8",
 )  # int64 принемает  ``-9_223_372_036_854_775_808`` to
 # ``9_223_372_036_854_775_807``
 
@@ -79,7 +80,7 @@ df_full = df + df_one
 df.tail()  # show 5 end row
 
 df[["survived", "age", "sex"]]
-df_on any = df.loc[1]
+df_on_any = df.loc[1]
 df["name"] = "SENATOROV"
 df_table = df.loc[df.index]
 df
@@ -96,7 +97,7 @@ help(pd.Series)
 
 
 # +
-def createdataframe(student_data: List[List[int]]) -> pd.DataFrame:
+def createdataframe(student_data: list[list[int]]) -> pd.DataFrame:
     """Создает DataFrame.
 
     из списка данных студентов.
@@ -109,7 +110,6 @@ def createdataframe(student_data: List[List[int]]) -> pd.DataFrame:
     Возвращает.
 
     pd.DataFrame:DataFrame с данными студентов в столбцах 'student_id' и 'age'.
-
     """
     column_names = [
         "student_id",
@@ -152,8 +152,9 @@ def createdataframe(student_data: List[List[int]]) -> pd.DataFrame:
 # столбцы студенческого билета и возраста,
 # как указано в списке column_names.
 
+
 # +
-def get_dataframe_size(players: pd.DataFrame) -> List[int]:
+def get_dataframe_size(players: pd.DataFrame) -> list[int]:
     """Возвращает размер.
 
     DataFrame.
@@ -190,15 +191,15 @@ def get_dataframe_size(players: pd.DataFrame) -> List[int]:
 # где первый элемент представляет количество строк,
 # а второй элемент представляет количество столбцов.
 
+
 # +
 def select_first_rows(employees: pd.DataFrame) -> pd.DataFrame:
     """Возвращает первые три строки DataFrame.
 
-    Параметры.
-    employees (pd.DataFrame): DataFrame с данными сотрудников.
+    Параметры. employees (pd.DataFrame): DataFrame с данными сотрудников.
 
-    Возвращает.
-    pd.DataFrame: DataFrame, содержащий первые три строки исходного DataFrame.
+    Возвращает. pd.DataFrame: DataFrame, содержащий первые три строки исходного
+    DataFrame.
     """
     return employees.head(3)  # `return employees.head(3)` - это операция,
     # которая вызывает метод `head(3)`

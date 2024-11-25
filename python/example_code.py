@@ -11,60 +11,61 @@
 #     language: python
 #     name: python3
 # ---
-
 """Example code."""
 
 
-# Создание вертуального окружение нужно для изоляции одного проекта от другого 
+# Создание вертуального окружение нужно для изоляции одного проекта от другого
 
-# Подкотовка к созданию окружения 
-# # mkdir new_priject 
-# # cd new_project 
+# Подкотовка к созданию окружения
+# # mkdir new_priject
+# # cd new_project
 #
 
-# Создание окружения 
-# Python -m venv venv # -m озночает что мы хотим запустить модуль, название модуля venv
-# Python3 -m venv 
+# Создание окружения
+# Python -m venv venv-m озночает что мы хотим запустить модуль,
+# название модуля venv
+# Python3 -m venv
 #
-# dir просмотра папок - windows 
-# # ls - для Linux 
+# dir просмотра папок - windows
+# # ls - для Linux
 
 # venv\venv\activet
 #
-# source vev/bin/activet - для Linux и Mac 
+# source vev/bin/activet - для Linux и Mac
 
-# Выход 
+# Выход
 # deactivate
 
-# pip - package Install Python - система управлния пакетами которая используется для установки и управления программными пакетами 
+# pip - package Install Python - система управлния пакетами которая
+# используется для установки и управления программными пакетами
 
-# Для просмотра установленных   пакетов 
-# pip freeze 
+# Для просмотра установленных   пакетов
+# pip freeze
 
-# pip  freeze > requerements.txt # Создали фаил с названием пакетов 
+# pip  freeze > requerements.txt # Создали фаил с названием пакетов
 
-# more название фаила для просмотра содержимого 
+# more название фаила для просмотра содержимого
 #
 
-# для установки на новый компютер старых библеотек 
-# install -r requerements.txt 
+# для установки на новый компютер старых библеотек
+# install -r requerements.txt
 
-# python для  акивации интепритатора 
+# python для  акивации интепритатора
 
-# константа это переменная которая не изменяеться в течение всего кода 
+# константа это переменная которая не изменяеться в течение всего кода
 #
 # MAX_COUNT = 1000
-# DAY = 60 * 60 * 24 # количество секунд в сутках 
+# DAY = 60 * 60 * 24 # количество секунд в сутках
 #
 
-# age = None 
+# age = None
+
 
 # +
 def print_variable_address(a_variable: int) -> None:
     """Print the memory address of the given variable.
 
-    Args:.
-        a_variable (int): The variable whose address is to be printed.
+    Args:.     a_variable (int): The variable whose address is to be printed.
     """
     print(id(a_variable))  # Returns the memory address of the object
 
@@ -73,7 +74,7 @@ b_variable: int = 4
 print_variable_address(b_variable)
 # -
 
-# Ввод и вывод данных 
+# Ввод и вывод данных
 # print(*object, sep = " ", end = "\n", file =sys.studout, flush=False)
 
 # +
@@ -94,8 +95,7 @@ match color:
 def check_value_end(value_one: int) -> None:
     """Check the value and prints a corresponding message.
 
-    Args.
-        value_one (int): The integer value to check.
+    Args.     value_one (int): The integer value to check.
     """
     match value_one:
         case 1:
@@ -126,7 +126,8 @@ check_value_end(1)
 #             print("Data is a list [1, 2]")
 #         case dict() if data_input:  # Checks if it's a non-empty dictionary
 #             for key, value in data_input.items():
-#                 print(f"Data is a dictionary with key '{key}' and value '{value}'")
+#                 print(f"Data is a dictionary with key '{key}' and value
+# '{value}'")
 #         case _:
 #             print("Unknown data structure")
 #
@@ -139,21 +140,24 @@ check_value_end(1)
 #
 #     Кортеж (1, 2): Если данные — кортеж (1, 2), выполнится первый блок.
 #     Список [1, 2]: Если данные — список [1, 2], выполнится второй блок.
-#     Словарь: Если данные — словарь с ключом key, выполнится третий блок с выводом значения, ассоциированного с этим ключом.
-#     Любая другая структура: Если данные не соответствуют ни одному из вышеуказанных шаблонов, будет выполнен блок с _.
+#     Словарь: Если данные — словарь с ключом key, выполнится третий блок с
+# выводом значения, ассоциированного с этим ключом.
+#     Любая другая структура: Если данные не соответствуют ни одному из
+# вышеуказанных шаблонов, будет выполнен блок с _.
+
 
 # +
 def process_number(num_one: int) -> None:
     """Determine if the provided number is positive, negative, or zero.
 
-    Args:.
-        num_one (int): The number to be processed.
+    Args:.     num_one (int): The number to be processed.
     """
+    value_one: int = num_one
     match num_one:
-        case x if x > 0:
-            print(f"{x} — положительное число")
-        case x if x < 0:
-            print(f"{x} — отрицательное число")
+        case value_one if value_one > 0:
+            print(f"{value_one} — положительное число")
+        case value_one if value_one < 0:
+            print(f"{value_one} — отрицательное число")
         case _:
             print("Число равно нулю")
 
@@ -163,29 +167,29 @@ num_example = 2
 process_number(num_example)
 # -
 
-# True and True = True 
+# True and True = True
 #
-# False and True = False 
+# False and True = False
 #
-# True and False = False 
+# True and False = False
 #
-# False and False = False 
+# False and False = False
 #
-# True or True = True 
+# True or True = True
 #
 # False and True = True
 #
-# True and False = True 
+# True and False = True
 #
-# False and False = False 
+# False and False = False
 #
 # True not  True = False
 #
 # False not  True = True
 #
-# True and False = True 
+# True and False = True
 #
-# False and False = False 
+# False and False = False
 
 year = int(input("Вв в формате yyyy: "))
 if year % 4 != 0:
@@ -223,16 +227,20 @@ else:
     print(f'"{string1}" идёт позже "{string2}" в алфавитном порядке')
 # -
 
-# В этом примере строка "apple" идёт раньше, чем строка "banana", поскольку 'a' < 'b' в алфавитном порядке
+# В этом примере строка "apple" идёт раньше, чем строка "banana", поскольку
+# 'a' < 'b' в алфавитном порядке
 
-# Символьное сравнение: При сравнении строк "apple" и "banana" Python начинает сравнение с первого символа. Символ 'a' (из "apple") сравнивается с 'b' (из "banana"). Поскольку 'a' в алфавите идёт раньше 'b', строка "apple" считается меньшей
+# Символьное сравнение: При сравнении строк "apple" и "banana" Python начинает
+# сравнение с первого символа. Символ 'a' (из "apple") сравнивается с 'b'
+# (из "banana").
+# Поскольку 'a' в алфавите идёт раньше 'b', строка "apple" считается меньшей
 
-# Логический цикл while 
-# continue - возрашает в начала цикла 
+# Логический цикл while
+# continue - возрашает в начала цикла
 #
-# break - досрочная выход из цикла 
+# break - досрочная выход из цикла
 #
-# действие после else 
+# действие после else
 
 # +
 num_two = float(input("Введите число: "))
@@ -291,9 +299,9 @@ else:
 print("Было введено число ", num)
 # -
 
-# Цикл итератор for in 
+# Цикл итератор for in
 #
-# range по целым числам 
+# range по целым числам
 #
 # функция enumerate()
 #
