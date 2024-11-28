@@ -13,7 +13,8 @@
 # ---
 
 # +
-"""This module provides utilities for data manipulation and analysis.
+"""
+This module provides utilities for data manipulation and analysis.
 
 It leverages numpy and pandas to perform operations on arrays and data frames,
 and includes type annotations for better code clarity.
@@ -45,6 +46,7 @@ obj[["a", "b"]]
 obj[obj > 1]
 
 obj * 2
+
 "a" in obj  # return bool
 
 data = {"Moscow": 12000000, "SPB": 7000000}
