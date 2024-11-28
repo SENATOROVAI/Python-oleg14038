@@ -13,8 +13,7 @@
 # ---
 
 # +
-"""
-This module provides functionality for working with data using pandas.
+"""This module provides functionality for working with data using pandas.
 
 It includes functions and utilities to manipulate and analyze data frames.
 """
@@ -109,7 +108,6 @@ def createdataframe(student_data: List[List[int]]) -> pd.DataFrame:
     Возвращает.
 
     pd.DataFrame:DataFrame с данными студентов в столбцах 'student_id' и 'age'.
-
     """
     column_names = [
         "student_id",
@@ -194,11 +192,10 @@ def get_dataframe_size(players: pd.DataFrame) -> List[int]:
 def select_first_rows(employees: pd.DataFrame) -> pd.DataFrame:
     """Возвращает первые три строки DataFrame.
 
-    Параметры.
-    employees (pd.DataFrame): DataFrame с данными сотрудников.
+    Параметры. employees (pd.DataFrame): DataFrame с данными сотрудников.
 
-    Возвращает.
-    pd.DataFrame: DataFrame, содержащий первые три строки исходного DataFrame.
+    Возвращает. pd.DataFrame: DataFrame, содержащий первые три строки исходного
+    DataFrame.
     """
     return employees.head(3)  # `return employees.head(3)` - это операция,
     # которая вызывает метод `head(3)`
