@@ -71,6 +71,5 @@
     * [Chapter6](python/made-easy/chapter6.ipynb)
     * [Chapter6](python/made-easy/chapter6.py)
     * [Chapter Six](python/made-easy/chapter_six.py)
-    * [Chapter Six One](python/made-easy/chapter_six_one.py)
   * [Stepik](python/stepik.ipynb)
   * [Stepik](python/stepik.py)
