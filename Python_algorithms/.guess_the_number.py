@@ -15,12 +15,12 @@
 # +
 """The `import random` allows you to use functions related to.
 
-generating random numbers in your code. 
-`import sys` allows you to interact with the Python.
-interpreter and operating system.
+generating random numbers in your code. `import sys` allows you to interact
+with the Python. interpreter and operating system.
 """
 
 import sys
+
 # -
 
 while True:
